@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "express_vercel_build/dist",
     "rootDir": "src",
     "module": "commonjs",
     "target": "es2019",
