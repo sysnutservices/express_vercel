@@ -1,14 +1,15 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "rootDir": "src",
-        "module": "commonjs",
-        "target": "es2019",
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "moduleResolution": "node"
-    },
-    "include": [
-        "src"
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "api/index.js"
+        }
     ]
 }
